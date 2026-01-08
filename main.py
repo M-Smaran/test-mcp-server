@@ -6,7 +6,7 @@ import tempfile
 TEMP_DIR = tempfile.gettempdir()
 # Get the directory where main.py is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "expenses.db")
+DB_PATH = os.path.join(TEMP_DIR, "expenses.db")
 #DB_PATH = os.path.join(TEMP_DIR, "expenses.db")
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
