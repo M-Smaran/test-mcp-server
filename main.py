@@ -104,7 +104,7 @@ async def list_expenses(start_date: str, end_date: str):
         return {"status": "error", "message": f"Error listing expenses: {str(e)}"}
 
 @mcp.tool()
-async def summarize_expenses(start_date: str, end_date: str, category: str = None):
+async def summarize(start_date: str, end_date: str, category: str = None):
     """
     Summarize expenses by category within an inclusive date range.
     
